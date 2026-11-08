@@ -1,0 +1,7 @@
+# Quién revisa qué. Reemplazar por los usuarios reales de GitHub y descomentar.
+# Con "Require review from Code Owners" activado, cada PR pide revisión al dueño del área.
+#
+# /backend/app/core/   @usuario-motor
+# /backend/app/api/    @usuario-api
+# /frontend/           @usuario-front
+# /docs/               @usuario-docs

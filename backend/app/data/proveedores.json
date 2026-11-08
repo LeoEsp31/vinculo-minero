@@ -1,0 +1,978 @@
+[
+  {
+    "id": "S01",
+    "razon_social": "Talleres Retamo SRL [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Rawson",
+    "descripcion": "Fabricación y montaje de estructuras metálicas para naves industriales.",
+    "capacidades": [
+      {
+        "rubro": "MET-FAB",
+        "capacidad_mensual": 40
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-9001",
+        "vence": "2027-06-30"
+      },
+      {
+        "codigo": "SEG-ALT",
+        "vence": "2027-01-31"
+      },
+      {
+        "codigo": "ISO-45001",
+        "vence": "2026-08-31"
+      }
+    ],
+    "maquinaria": [
+      "grua",
+      "equipo_soldadura"
+    ],
+    "dotacion": 35,
+    "anios_experiencia_minera": 8,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 92,
+      "inscripto_repromin": true
+    }
+  },
+  {
+    "id": "S02",
+    "razon_social": "Metalúrgica Jarilla SA [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Chimbas",
+    "descripcion": "Estructuras metálicas y mecanizado de piezas.",
+    "capacidades": [
+      {
+        "rubro": "MET-FAB",
+        "capacidad_mensual": 30
+      },
+      {
+        "rubro": "MET-TOR",
+        "capacidad_mensual": 1200
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-9001",
+        "vence": "2027-03-31"
+      },
+      {
+        "codigo": "SEG-ALT",
+        "vence": "2026-12-31"
+      }
+    ],
+    "maquinaria": [
+      "equipo_soldadura",
+      "grua",
+      "torno_cnc"
+    ],
+    "dotacion": 24,
+    "anios_experiencia_minera": 5,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 85,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S03",
+    "razon_social": "Estructuras Pichana SRL [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Pocito",
+    "descripcion": "Estructuras livianas y soldadura.",
+    "capacidades": [
+      {
+        "rubro": "MET-FAB",
+        "capacidad_mensual": 20
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-9001",
+        "vence": "2026-10-01"
+      }
+    ],
+    "maquinaria": [
+      "equipo_soldadura"
+    ],
+    "dotacion": 14,
+    "anios_experiencia_minera": 3,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 95,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S04",
+    "razon_social": "Soldaduras Algarrobo [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Santa Lucía",
+    "descripcion": "Soldadura y montaje en altura.",
+    "capacidades": [
+      {
+        "rubro": "MET-FAB",
+        "capacidad_mensual": 15
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "SEG-ALT",
+        "vence": null
+      }
+    ],
+    "maquinaria": [
+      "equipo_soldadura"
+    ],
+    "dotacion": 9,
+    "anios_experiencia_minera": 2,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 100,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S05",
+    "razon_social": "Calderería Tusca SRL [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Albardón",
+    "descripcion": "Calderería, estructuras y mantenimiento mecánico.",
+    "capacidades": [
+      {
+        "rubro": "MET-FAB",
+        "capacidad_mensual": 25
+      },
+      {
+        "rubro": "MET-MEC",
+        "capacidad_mensual": 2000
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-9001",
+        "vence": "2027-02-28"
+      },
+      {
+        "codigo": "SEG-ALT",
+        "vence": "2027-02-28"
+      }
+    ],
+    "maquinaria": [
+      "equipo_soldadura",
+      "grua"
+    ],
+    "dotacion": 22,
+    "anios_experiencia_minera": 6,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 88,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S06",
+    "razon_social": "Mantenimiento Chañar SRL [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "San Martín",
+    "descripcion": "Mantenimiento mecánico de equipos de planta.",
+    "capacidades": [
+      {
+        "rubro": "MET-MEC",
+        "capacidad_mensual": 3500
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-9001",
+        "vence": "2027-09-30"
+      },
+      {
+        "codigo": "ISO-45001",
+        "vence": "2027-09-30"
+      }
+    ],
+    "maquinaria": [
+      "camioneta_4x4"
+    ],
+    "dotacion": 28,
+    "anios_experiencia_minera": 6,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 90,
+      "inscripto_repromin": true
+    }
+  },
+  {
+    "id": "S07",
+    "razon_social": "Servicios Mecánicos Brea [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Caucete",
+    "descripcion": "Mantenimiento de bombas, reductores y tornería.",
+    "capacidades": [
+      {
+        "rubro": "MET-MEC",
+        "capacidad_mensual": 2500
+      },
+      {
+        "rubro": "MET-TOR",
+        "capacidad_mensual": 800
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-45001",
+        "vence": "2027-04-30"
+      }
+    ],
+    "maquinaria": [
+      "torno_cnc"
+    ],
+    "dotacion": 18,
+    "anios_experiencia_minera": 4,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 82,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S24",
+    "razon_social": "Tornería de Precisión Chilca [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Capital",
+    "descripcion": "Mecanizado CNC de repuestos.",
+    "capacidades": [
+      {
+        "rubro": "MET-TOR",
+        "capacidad_mensual": 900
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-9001",
+        "vence": "2027-08-31"
+      }
+    ],
+    "maquinaria": [
+      "torno_cnc"
+    ],
+    "dotacion": 7,
+    "anios_experiencia_minera": 4,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 100,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S08",
+    "razon_social": "Movimientos de Suelo Pircas SRL [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Ullum",
+    "descripcion": "Movimiento de suelos, plataformas y caminos.",
+    "capacidades": [
+      {
+        "rubro": "CIV-MOV",
+        "capacidad_mensual": 30000
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-45001",
+        "vence": "2027-05-31"
+      }
+    ],
+    "maquinaria": [
+      "retroexcavadora",
+      "camion_volcador"
+    ],
+    "dotacion": 20,
+    "anios_experiencia_minera": 7,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 90,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S09",
+    "razon_social": "Hormigones Atalaya SA [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Rivadavia",
+    "descripcion": "Fundaciones y obras de hormigón.",
+    "capacidades": [
+      {
+        "rubro": "CIV-HOR",
+        "capacidad_mensual": 1500
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-9001",
+        "vence": "2027-07-31"
+      }
+    ],
+    "maquinaria": [
+      "hormigonera"
+    ],
+    "dotacion": 18,
+    "anios_experiencia_minera": 4,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 87,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S10",
+    "razon_social": "Construcciones Jume [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Sarmiento",
+    "descripcion": "Obras civiles menores. Parte del personal reside fuera de la provincia.",
+    "capacidades": [
+      {
+        "rubro": "CIV-MOV",
+        "capacidad_mensual": 10000
+      },
+      {
+        "rubro": "CIV-HOR",
+        "capacidad_mensual": 600
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-9001",
+        "vence": "2027-01-31"
+      }
+    ],
+    "maquinaria": [
+      "retroexcavadora",
+      "hormigonera"
+    ],
+    "dotacion": 16,
+    "anios_experiencia_minera": 3,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 70,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S11",
+    "razon_social": "Electromontajes Altavista SRL [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Capital",
+    "descripcion": "Montajes eléctricos de media y baja tensión.",
+    "capacidades": [
+      {
+        "rubro": "ELE-MT",
+        "capacidad_mensual": 3500
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-45001",
+        "vence": "2027-03-31"
+      }
+    ],
+    "maquinaria": [
+      "camioneta_4x4"
+    ],
+    "dotacion": 26,
+    "anios_experiencia_minera": 6,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 91,
+      "inscripto_repromin": true
+    }
+  },
+  {
+    "id": "S12",
+    "razon_social": "Control y Automatización Molle SRL [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Capital",
+    "descripcion": "Instrumentación, PLC y calibración.",
+    "capacidades": [
+      {
+        "rubro": "ELE-INS",
+        "capacidad_mensual": 1000
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-9001",
+        "vence": "2027-06-30"
+      }
+    ],
+    "maquinaria": [],
+    "dotacion": 8,
+    "anios_experiencia_minera": 4,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 100,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S13",
+    "razon_social": "Eléctrica Cardón [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Rawson",
+    "descripcion": "Instalaciones eléctricas industriales.",
+    "capacidades": [
+      {
+        "rubro": "ELE-MT",
+        "capacidad_mensual": 1500
+      },
+      {
+        "rubro": "ELE-INS",
+        "capacidad_mensual": 300
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-9001",
+        "vence": "2027-02-28"
+      },
+      {
+        "codigo": "ISO-45001",
+        "vence": "2027-02-28"
+      }
+    ],
+    "maquinaria": [],
+    "dotacion": 10,
+    "anios_experiencia_minera": 3,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 86,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S14",
+    "razon_social": "Transportes Quebrada Linda [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Iglesia",
+    "descripcion": "Transporte de personal y cargas livianas a campamentos.",
+    "capacidades": [
+      {
+        "rubro": "LOG-PER",
+        "capacidad_mensual": 60
+      },
+      {
+        "rubro": "LOG-CAR",
+        "capacidad_mensual": 50
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-45001",
+        "vence": "2027-10-31"
+      }
+    ],
+    "maquinaria": [
+      "minibus",
+      "camioneta_4x4"
+    ],
+    "dotacion": 22,
+    "anios_experiencia_minera": 9,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 95,
+      "inscripto_repromin": true
+    }
+  },
+  {
+    "id": "S15",
+    "razon_social": "Catering Huerta Andina [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Jáchal",
+    "descripcion": "Catering y comedores para campamentos.",
+    "capacidades": [
+      {
+        "rubro": "SRV-CAT",
+        "capacidad_mensual": 18000
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "HAB-BROM",
+        "vence": "2027-04-30"
+      },
+      {
+        "codigo": "ISO-9001",
+        "vence": "2027-04-30"
+      }
+    ],
+    "maquinaria": [],
+    "dotacion": 30,
+    "anios_experiencia_minera": 5,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 97,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S16",
+    "razon_social": "Viandas del Valle [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "9 de Julio",
+    "descripcion": "Viandas. Tributa en otra jurisdicción.",
+    "capacidades": [
+      {
+        "rubro": "SRV-CAT",
+        "capacidad_mensual": 6000
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "HAB-BROM",
+        "vence": "2027-01-31"
+      }
+    ],
+    "maquinaria": [],
+    "dotacion": 10,
+    "anios_experiencia_minera": 1,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": false,
+      "porcentaje_personal_sanjuanino": 100,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S17",
+    "razon_social": "Recuperadora Tamarisco [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Chimbas",
+    "descripcion": "Recolección y reciclaje de residuos no peligrosos.",
+    "capacidades": [
+      {
+        "rubro": "AMB-RES",
+        "capacidad_mensual": 20
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-14001",
+        "vence": "2027-06-30"
+      }
+    ],
+    "maquinaria": [
+      "camion_volcador"
+    ],
+    "dotacion": 8,
+    "anios_experiencia_minera": 2,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 88,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S18",
+    "razon_social": "Suministros Cactus SRL [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Pocito",
+    "descripcion": "Provisión de EPP y ropa de trabajo.",
+    "capacidades": [
+      {
+        "rubro": "SEG-EPP",
+        "capacidad_mensual": 5000
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-9001",
+        "vence": "2027-05-31"
+      }
+    ],
+    "maquinaria": [],
+    "dotacion": 6,
+    "anios_experiencia_minera": 4,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 90,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S23",
+    "razon_social": "Limpiezas Industriales Totora [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Chimbas",
+    "descripcion": "Limpieza industrial y de campamentos.",
+    "capacidades": [
+      {
+        "rubro": "SRV-LIM",
+        "capacidad_mensual": 3000
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-45001",
+        "vence": "2027-03-31"
+      }
+    ],
+    "maquinaria": [],
+    "dotacion": 40,
+    "anios_experiencia_minera": 3,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 94,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S19",
+    "razon_social": "Laboratorio Analítico Lagunas [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Capital",
+    "descripcion": "Análisis de aguas y suelos.",
+    "capacidades": [
+      {
+        "rubro": "AMB-LAB",
+        "capacidad_mensual": 400
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-17025",
+        "vence": "2027-05-31"
+      },
+      {
+        "codigo": "ISO-9001",
+        "vence": "2027-05-31"
+      }
+    ],
+    "maquinaria": [],
+    "dotacion": 12,
+    "anios_experiencia_minera": 6,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 92,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S20",
+    "razon_social": "Monitoreos Ambientales Jarillal [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Rivadavia",
+    "descripcion": "Monitoreo de material particulado y ruido.",
+    "capacidades": [
+      {
+        "rubro": "AMB-MON",
+        "capacidad_mensual": 6
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-14001",
+        "vence": "2027-08-31"
+      }
+    ],
+    "maquinaria": [
+      "laboratorio_movil",
+      "camioneta_4x4"
+    ],
+    "dotacion": 7,
+    "anios_experiencia_minera": 4,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 100,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S21",
+    "razon_social": "Fletes Travesía SRL [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "Caucete",
+    "descripcion": "Transporte de carga general.",
+    "capacidades": [
+      {
+        "rubro": "LOG-CAR",
+        "capacidad_mensual": 100
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-45001",
+        "vence": "2027-02-28"
+      }
+    ],
+    "maquinaria": [
+      "camion_volcador"
+    ],
+    "dotacion": 25,
+    "anios_experiencia_minera": 7,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 89,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "S22",
+    "razon_social": "Combustibles y Logística Salitral [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "San Juan",
+    "departamento": "25 de Mayo",
+    "descripcion": "Transporte de combustibles.",
+    "capacidades": [
+      {
+        "rubro": "LOG-PEL",
+        "capacidad_mensual": 15
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "HAB-PEL",
+        "vence": "2027-07-31"
+      },
+      {
+        "codigo": "ISO-45001",
+        "vence": "2027-07-31"
+      }
+    ],
+    "maquinaria": [
+      "camion_cisterna"
+    ],
+    "dotacion": 12,
+    "anios_experiencia_minera": 5,
+    "arraigo": {
+      "domicilio_operativo_sj": true,
+      "tributa_en_sj": true,
+      "porcentaje_personal_sanjuanino": 90,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "N01",
+    "razon_social": "Mantenimientos Industriales del Centro SA [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "Córdoba",
+    "departamento": "Capital",
+    "descripcion": "Mantenimiento de molinos y chancadores.",
+    "capacidades": [
+      {
+        "rubro": "MET-MEC",
+        "capacidad_mensual": 8000
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-9001",
+        "vence": "2027-12-31"
+      },
+      {
+        "codigo": "ISO-45001",
+        "vence": "2027-12-31"
+      }
+    ],
+    "maquinaria": [
+      "camioneta_4x4"
+    ],
+    "dotacion": 60,
+    "anios_experiencia_minera": 15,
+    "arraigo": {
+      "domicilio_operativo_sj": false,
+      "tributa_en_sj": false,
+      "porcentaje_personal_sanjuanino": 5,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "N02",
+    "razon_social": "Obras Andinas SA [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "Mendoza",
+    "departamento": "Godoy Cruz",
+    "descripcion": "Constructora de obras civiles mineras.",
+    "capacidades": [
+      {
+        "rubro": "CIV-MOV",
+        "capacidad_mensual": 60000
+      },
+      {
+        "rubro": "CIV-HOR",
+        "capacidad_mensual": 3000
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "ISO-9001",
+        "vence": "2027-12-31"
+      },
+      {
+        "codigo": "ISO-45001",
+        "vence": "2027-12-31"
+      }
+    ],
+    "maquinaria": [
+      "retroexcavadora",
+      "camion_volcador",
+      "hormigonera"
+    ],
+    "dotacion": 80,
+    "anios_experiencia_minera": 12,
+    "arraigo": {
+      "domicilio_operativo_sj": false,
+      "tributa_en_sj": false,
+      "porcentaje_personal_sanjuanino": 5,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "N03",
+    "razon_social": "Gestión Ambiental Cuyana SA [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "Mendoza",
+    "departamento": "Luján de Cuyo",
+    "descripcion": "Transporte y tratamiento de residuos peligrosos.",
+    "capacidades": [
+      {
+        "rubro": "AMB-RES",
+        "capacidad_mensual": 50
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "REG-RES",
+        "vence": "2027-06-30"
+      },
+      {
+        "codigo": "ISO-14001",
+        "vence": "2027-06-30"
+      }
+    ],
+    "maquinaria": [
+      "camion_volcador"
+    ],
+    "dotacion": 25,
+    "anios_experiencia_minera": 10,
+    "arraigo": {
+      "domicilio_operativo_sj": false,
+      "tributa_en_sj": false,
+      "porcentaje_personal_sanjuanino": 5,
+      "inscripto_repromin": false
+    }
+  },
+  {
+    "id": "N04",
+    "razon_social": "Transportes Pampeanos SA [DEMO]",
+    "ficticio": true,
+    "pais": "Argentina",
+    "provincia": "Buenos Aires",
+    "departamento": "Campana",
+    "descripcion": "Logística de cargas peligrosas.",
+    "capacidades": [
+      {
+        "rubro": "LOG-PEL",
+        "capacidad_mensual": 100
+      },
+      {
+        "rubro": "LOG-CAR",
+        "capacidad_mensual": 300
+      }
+    ],
+    "certificaciones": [
+      {
+        "codigo": "HAB-PEL",
+        "vence": "2027-12-31"
+      },
+      {
+        "codigo": "ISO-45001",
+        "vence": "2027-12-31"
+      }
+    ],
+    "maquinaria": [
+      "camion_cisterna"
+    ],
+    "dotacion": 150,
+    "anios_experiencia_minera": 20,
+    "arraigo": {
+      "domicilio_operativo_sj": false,
+      "tributa_en_sj": false,
+      "porcentaje_personal_sanjuanino": 5,
+      "inscripto_repromin": false
+    }
+  }
+]

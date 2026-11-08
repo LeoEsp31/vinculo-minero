@@ -1,0 +1,254 @@
+[
+  {
+    "id": "P001",
+    "titulo": "Ampliación de planta — Proyecto Demo Quebrada Norte [FICTICIO]",
+    "comprador": "Minera Demo Quebrada Norte SA [FICTICIA]",
+    "ficticio": true,
+    "descripcion": "Pliego ficticio armado para la demostración. Los paquetes imitan la práctica de publicar lotes grandes que dejan afuera a las PyMEs.",
+    "fecha_referencia": "2026-11-15",
+    "items": [
+      {
+        "id": "I1",
+        "paquete": "Nave de mantenimiento: obra civil y estructura",
+        "descripcion": "Movimiento de suelos para plataformas",
+        "rubro": "CIV-MOV",
+        "cantidad_mensual": 25000,
+        "monto_estimado_usd": 900000,
+        "certificaciones_excluyentes": [
+          "ISO-45001"
+        ],
+        "certificaciones_deseables": [],
+        "maquinaria_requerida": [
+          "retroexcavadora",
+          "camion_volcador"
+        ],
+        "dotacion_minima": 12,
+        "experiencia_minima_anios": 2
+      },
+      {
+        "id": "I2",
+        "paquete": "Nave de mantenimiento: obra civil y estructura",
+        "descripcion": "Fundaciones de hormigón",
+        "rubro": "CIV-HOR",
+        "cantidad_mensual": 1200,
+        "monto_estimado_usd": 700000,
+        "certificaciones_excluyentes": [
+          "ISO-9001"
+        ],
+        "certificaciones_deseables": [],
+        "maquinaria_requerida": [
+          "hormigonera"
+        ],
+        "dotacion_minima": 15,
+        "experiencia_minima_anios": 3
+      },
+      {
+        "id": "I3",
+        "paquete": "Nave de mantenimiento: obra civil y estructura",
+        "descripcion": "Fabricación y montaje de estructura metálica",
+        "rubro": "MET-FAB",
+        "cantidad_mensual": 120,
+        "monto_estimado_usd": 1800000,
+        "certificaciones_excluyentes": [
+          "ISO-9001",
+          "SEG-ALT"
+        ],
+        "certificaciones_deseables": [
+          "ISO-45001"
+        ],
+        "maquinaria_requerida": [
+          "grua",
+          "equipo_soldadura"
+        ],
+        "dotacion_minima": 20,
+        "experiencia_minima_anios": 3
+      },
+      {
+        "id": "I4",
+        "paquete": "Electricidad e instrumentación de planta",
+        "descripcion": "Montaje eléctrico de tableros y cableado",
+        "rubro": "ELE-MT",
+        "cantidad_mensual": 3000,
+        "monto_estimado_usd": 600000,
+        "certificaciones_excluyentes": [
+          "ISO-45001"
+        ],
+        "certificaciones_deseables": [],
+        "maquinaria_requerida": [],
+        "dotacion_minima": 15,
+        "experiencia_minima_anios": 2
+      },
+      {
+        "id": "I5",
+        "paquete": "Electricidad e instrumentación de planta",
+        "descripcion": "Instrumentación y calibración",
+        "rubro": "ELE-INS",
+        "cantidad_mensual": 800,
+        "monto_estimado_usd": 250000,
+        "certificaciones_excluyentes": [
+          "ISO-9001"
+        ],
+        "certificaciones_deseables": [],
+        "maquinaria_requerida": [],
+        "dotacion_minima": 5,
+        "experiencia_minima_anios": 2
+      },
+      {
+        "id": "I6",
+        "paquete": "Servicios al campamento",
+        "descripcion": "Transporte de personal al campamento",
+        "rubro": "LOG-PER",
+        "cantidad_mensual": 50,
+        "monto_estimado_usd": 300000,
+        "certificaciones_excluyentes": [
+          "ISO-45001"
+        ],
+        "certificaciones_deseables": [],
+        "maquinaria_requerida": [
+          "minibus"
+        ],
+        "dotacion_minima": 10,
+        "experiencia_minima_anios": 2
+      },
+      {
+        "id": "I7",
+        "paquete": "Servicios al campamento",
+        "descripcion": "Catering del campamento",
+        "rubro": "SRV-CAT",
+        "cantidad_mensual": 15000,
+        "monto_estimado_usd": 450000,
+        "certificaciones_excluyentes": [
+          "HAB-BROM"
+        ],
+        "certificaciones_deseables": [],
+        "maquinaria_requerida": [],
+        "dotacion_minima": 12,
+        "experiencia_minima_anios": 1
+      },
+      {
+        "id": "I8",
+        "paquete": "Servicios al campamento",
+        "descripcion": "Gestión de residuos peligrosos",
+        "rubro": "AMB-RES",
+        "cantidad_mensual": 15,
+        "monto_estimado_usd": 150000,
+        "certificaciones_excluyentes": [
+          "REG-RES"
+        ],
+        "certificaciones_deseables": [],
+        "maquinaria_requerida": [
+          "camion_volcador"
+        ],
+        "dotacion_minima": 4,
+        "experiencia_minima_anios": 2
+      },
+      {
+        "id": "I9",
+        "paquete": "Mantenimiento de molinos",
+        "descripcion": "Mantenimiento de molinos y chancadores",
+        "rubro": "MET-MEC",
+        "cantidad_mensual": 6000,
+        "monto_estimado_usd": 1400000,
+        "certificaciones_excluyentes": [
+          "ISO-9001",
+          "ISO-45001"
+        ],
+        "certificaciones_deseables": [],
+        "maquinaria_requerida": [],
+        "dotacion_minima": 30,
+        "experiencia_minima_anios": 8
+      },
+      {
+        "id": "I10",
+        "paquete": "Provisión de EPP",
+        "descripcion": "Provisión de EPP",
+        "rubro": "SEG-EPP",
+        "cantidad_mensual": 2000,
+        "monto_estimado_usd": 120000,
+        "certificaciones_excluyentes": [
+          "ISO-9001"
+        ],
+        "certificaciones_deseables": [],
+        "maquinaria_requerida": [],
+        "dotacion_minima": 0,
+        "experiencia_minima_anios": 0
+      }
+    ]
+  },
+  {
+    "id": "P002",
+    "titulo": "Servicios ambientales y logísticos — Operación Demo Valle Alto [FICTICIO]",
+    "comprador": "Minera Demo Valle Alto SA [FICTICIA]",
+    "ficticio": true,
+    "descripcion": "Segundo pliego ficticio, más chico, para probar la plataforma.",
+    "fecha_referencia": "2026-11-15",
+    "items": [
+      {
+        "id": "I1",
+        "paquete": "Monitoreo ambiental integral",
+        "descripcion": "Análisis de agua y suelos",
+        "rubro": "AMB-LAB",
+        "cantidad_mensual": 300,
+        "monto_estimado_usd": 180000,
+        "certificaciones_excluyentes": [
+          "ISO-17025"
+        ],
+        "certificaciones_deseables": [],
+        "maquinaria_requerida": [],
+        "dotacion_minima": 4,
+        "experiencia_minima_anios": 3
+      },
+      {
+        "id": "I2",
+        "paquete": "Monitoreo ambiental integral",
+        "descripcion": "Campañas de monitoreo de aire y ruido",
+        "rubro": "AMB-MON",
+        "cantidad_mensual": 4,
+        "monto_estimado_usd": 120000,
+        "certificaciones_excluyentes": [
+          "ISO-14001"
+        ],
+        "certificaciones_deseables": [],
+        "maquinaria_requerida": [
+          "laboratorio_movil",
+          "camioneta_4x4"
+        ],
+        "dotacion_minima": 3,
+        "experiencia_minima_anios": 2
+      },
+      {
+        "id": "I3",
+        "paquete": "Logística de insumos",
+        "descripcion": "Transporte de carga general",
+        "rubro": "LOG-CAR",
+        "cantidad_mensual": 80,
+        "monto_estimado_usd": 400000,
+        "certificaciones_excluyentes": [
+          "ISO-45001"
+        ],
+        "certificaciones_deseables": [],
+        "maquinaria_requerida": [],
+        "dotacion_minima": 10,
+        "experiencia_minima_anios": 3
+      },
+      {
+        "id": "I4",
+        "paquete": "Logística de insumos",
+        "descripcion": "Transporte de combustibles",
+        "rubro": "LOG-PEL",
+        "cantidad_mensual": 30,
+        "monto_estimado_usd": 350000,
+        "certificaciones_excluyentes": [
+          "HAB-PEL",
+          "ISO-45001"
+        ],
+        "certificaciones_deseables": [],
+        "maquinaria_requerida": [
+          "camion_cisterna"
+        ],
+        "dotacion_minima": 6,
+        "experiencia_minima_anios": 3
+      }
+    ]
+  }
+]

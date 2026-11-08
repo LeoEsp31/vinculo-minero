@@ -1,0 +1,15 @@
+# Levanta todo con: docker compose up --build  →  http://localhost:8080
+services:
+  backend:
+    build: ./backend
+    environment:
+      VM_SUGERIDOR: palabras_clave  # "embeddings" requiere el extra [ia]
+    ports:
+      - "8000:8000"
+
+  frontend:
+    build: ./frontend
+    depends_on:
+      - backend
+    ports:
+      - "8080:80"
