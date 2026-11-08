@@ -33,14 +33,17 @@ from .modelos import (
     AporteSocio,
     Arraigo,
     CapacidadRubro,
+    CeldaCobertura,
     Certificacion,
     EvaluacionProveedor,
+    FilaCobertura,
     Lote,
     PropuestaUTE,
     Proveedor,
+    TipoRequisito,
 )
 from .scoring import clave_orden, evaluar
-from .taxonomia import MAQUINARIA, RUBROS
+from .taxonomia import CERTIFICACIONES, MAQUINARIA, RUBROS
 
 TOP_CANDIDATOS = 12
 MAX_SOCIOS = 3
@@ -72,6 +75,73 @@ def perfil_combinado(socios: list[Proveedor], fecha: date) -> Proveedor:
             inscripto_repromin=all(s.arraigo.inscripto_repromin for s in socios),
         ),
     )
+
+
+def matriz_cobertura(socios: list[Proveedor], lote: Lote, fecha: date) -> list[FilaCobertura]:
+    """Matriz requisitos × socios: deja a la vista qué pone cada PyME en la UTE."""
+    filas: list[FilaCobertura] = []
+
+    def fila(tipo: TipoRequisito, requisito: str, exigido: str, valores: list[tuple[bool, str]], cubierto: bool) -> None:
+        filas.append(
+            FilaCobertura(
+                tipo=tipo,
+                requisito=requisito,
+                exigido=exigido,
+                celdas=[
+                    CeldaCobertura(proveedor_id=s.id, aporta=ap, valor=v)
+                    for s, (ap, v) in zip(socios, valores, strict=True)
+                ],
+                cubierto=cubierto,
+            )
+        )
+
+    for r, dem in lote.demanda_por_rubro().items():
+        unidad = RUBROS[r].unidad
+        caps = [s.capacidad(r) for s in socios]
+        fila(
+            "rubro",
+            RUBROS[r].nombre,
+            f"{dem:g} {unidad}",
+            [(c > 0, f"{c:g} {unidad}" if c > 0 else "—") for c in caps],
+            sum(caps) >= dem,
+        )
+
+    excl = lote.certificaciones_excluyentes()
+    for c in sorted(excl | lote.certificaciones_deseables()):
+        tiene = [c in s.certificaciones_vigentes(fecha) for s in socios]
+        fila(
+            "certificacion",
+            CERTIFICACIONES[c],
+            "excluyente" if c in excl else "deseable",
+            [(t, "✓" if t else "—") for t in tiene],
+            any(tiene),
+        )
+
+    for m in sorted(lote.maquinaria_requerida()):
+        tiene = [m in s.maquinaria for s in socios]
+        fila("maquinaria", MAQUINARIA[m], "requerido", [(t, "✓" if t else "—") for t in tiene], any(tiene))
+
+    if (exp_min := lote.experiencia_minima()) > 0:
+        exps = [s.anios_experiencia_minera for s in socios]
+        fila(
+            "experiencia",
+            "Experiencia minera",
+            f"{exp_min} años",
+            [(e >= exp_min, f"{e} años") for e in exps],
+            max(exps) >= exp_min,
+        )
+
+    if (dot_min := lote.dotacion_minima()) > 0:
+        dots = [s.dotacion for s in socios]
+        fila(
+            "dotacion",
+            "Dotación",
+            f"{dot_min} personas",
+            [(d > 0, f"{d} personas") for d in dots],
+            sum(dots) >= dot_min,
+        )
+
+    return filas
 
 
 def _aportes(socio: Proveedor, lote: Lote, fecha: date) -> set[str]:
@@ -170,7 +240,10 @@ def sugerir_utes(
                     )
                 )
             propuesta = PropuestaUTE(
-                socios=aportes_socios, evaluacion=ev, explicacion=_explicar(aportes_socios, ev)
+                socios=aportes_socios,
+                evaluacion=ev,
+                explicacion=_explicar(aportes_socios, ev),
+                matriz=matriz_cobertura(socios, lote, fecha),
             )
             # Orden: aptas primero, mayor puntaje, menos socios, más socios locales, ids.
             clave = (

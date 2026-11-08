@@ -2,19 +2,22 @@ import { Fragment, useState } from "react";
 import type { AnalisisLote } from "../api/tipos";
 import { OPCION, usd } from "../formato";
 import { DesgloseScore } from "./DesgloseScore";
+import { MatrizCobertura } from "./MatrizCobertura";
 import { Preparacion } from "./Preparacion";
 
 export function TarjetaLote({ a, pliegoId }: { a: AnalisisLote; pliegoId: string }) {
   const [abierto, setAbierto] = useState(false);
   const [detalle, setDetalle] = useState<string | null>(null);
   const opcion = OPCION[a.recomendada.tipo];
-  const ute = a.utes.find(
+  const uteRecomendada = a.utes.find(
     (u) =>
       u.socios
         .map((s) => s.proveedor_id)
         .sort()
         .join() === [...a.recomendada.proveedor_ids].sort().join(),
   );
+  // Si no se recomienda una UTE pero se evaluaron, mostramos la mejor para ver qué falta.
+  const ute = uteRecomendada ?? a.utes[0];
 
   return (
     <article className="tarjeta lote">
@@ -39,22 +42,11 @@ export function TarjetaLote({ a, pliegoId }: { a: AnalisisLote; pliegoId: string
 
       {ute && (
         <div className="ute">
-          <h4>UTE sugerida · {ute.evaluacion.puntaje_total.toFixed(1)} puntos</h4>
-          <div className="ute__socios">
-            {ute.socios.map((s) => (
-              <div key={s.proveedor_id} className="socio">
-                <strong>{s.razon_social}</strong>
-                {s.es_local && <span className="chip chip--ok">Local</span>}
-                <ul>
-                  {s.aporta.map((x) => (
-                    <li key={x} className={s.aporte_unico.includes(x) ? "unico" : ""}>
-                      {x}
-                    </li>
-                  ))}
-                </ul>
-              </div>
-            ))}
-          </div>
+          <h4>
+            {uteRecomendada ? "UTE sugerida" : "Mejor alianza local posible (no alcanza)"} ·{" "}
+            {ute.evaluacion.puntaje_total.toFixed(1)} puntos
+          </h4>
+          <MatrizCobertura ute={ute} />
         </div>
       )}
 

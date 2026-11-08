@@ -7,7 +7,7 @@ uso responsable de datos e IA**. Cada bloque apunta a uno.
 |---|---|---|---|
 | 0:00–0:30 | 1 | San Juan se puso como objetivo que el 60 % de las compras mineras vaya a proveedores sanjuaninos. Pero las mineras publican paquetes enormes y una PyME sola no llega. El Repromin dice *quién* es local; nadie dice *cómo* llegar. | Problema |
 | 0:30–0:50 | 2 | Abrir el pliego P001. Mostrar el reporte: **1,8 % hoy → 76,8 %**. | Impacto |
-| 0:50–1:30 | 2 | Lote de estructura metálica: se dividió en 4 porque ninguna PyME hace 120 t/mes. Lote de obra civil: nadie lo cubre solo → **UTE Pircas + Atalaya**, qué aporta cada una. Botón *Borrador de carta de intención*. | Innovación |
+| 0:50–1:30 | 2 | Lote de estructura metálica: se dividió en 4 porque ninguna PyME hace 120 t/mes. Lote de obra civil: nadie lo cubre solo → **UTE Pircas + Atalaya**: en la matriz de cobertura se ve qué aporta cada una. Lote de molinos: la mejor alianza local no alcanza porque falta experiencia (8 años) → por eso va a un proveedor de afuera. Botón *Borrador de carta de intención*. | Innovación |
 | 1:30–2:05 | 3 | En el ranking, **"¿Por qué?"**: desglose del puntaje. Talleres Retamo sacó 96 y no 100 porque su ISO 45001 venció. Página *Cómo calculamos*: pesos públicos. *"Esto es una caja de cristal, no una caja negra."* | Uso responsable |
 | 2:05–2:30 | 3 | Residuos peligrosos: ninguna PyME local tiene la habilitación → aparece como **oportunidad de desarrollo de proveedores**. No escondemos el problema: lo convertimos en dato para el Estado. | Impacto |
 | 2:30–2:50 | 4 | Factibilidad: ya funciona; sin costos de IA (modelo abierto, local, opcional); software libre; se integra con el Repromin. No homologamos: preparamos para homologar. | Factibilidad + límite |

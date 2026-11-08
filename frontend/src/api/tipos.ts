@@ -82,10 +82,19 @@ export interface AporteSocio {
   aporte_unico: string[];
 }
 
+export interface FilaCobertura {
+  tipo: "rubro" | "certificacion" | "maquinaria" | "experiencia" | "dotacion";
+  requisito: string;
+  exigido: string;
+  celdas: { proveedor_id: string; aporta: boolean; valor: string }[];
+  cubierto: boolean;
+}
+
 export interface PropuestaUTE {
   socios: AporteSocio[];
   evaluacion: EvaluacionProveedor;
   explicacion: string;
+  matriz: FilaCobertura[];
 }
 
 export interface OpcionRecomendada {
