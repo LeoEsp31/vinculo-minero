@@ -415,7 +415,125 @@ th {
   font: inherit;
 }
 
+/* Formularios de alta (pliego y PyME) */
+a.boton {
+  display: inline-block;
+  text-decoration: none;
+}
+.boton:disabled {
+  opacity: 0.6;
+  cursor: default;
+}
+.form label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.form small {
+  font-weight: 400;
+}
+.form input:not([type="checkbox"]),
+.form select,
+.form textarea {
+  padding: 0.45rem 0.6rem;
+  border: 1px solid var(--borde);
+  border-radius: 8px;
+  font: inherit;
+  font-weight: 400;
+  background: var(--superficie);
+  color: var(--texto);
+  min-width: 0;
+}
+.campos {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 0.75rem 1rem;
+  margin-bottom: 0.75rem;
+}
+.campos__ancho {
+  grid-column: 1 / -1;
+}
+.item-form {
+  border: 1px solid var(--borde);
+  border-radius: var(--radio);
+  padding: 0.75rem 1rem;
+  margin: 0 0 0.75rem;
+}
+.item-form legend {
+  font-weight: 700;
+  display: flex;
+  gap: 0.75rem;
+  align-items: baseline;
+  padding: 0 0.3rem;
+}
+.desplegable {
+  margin: 0.5rem 0;
+}
+.desplegable summary {
+  cursor: pointer;
+  font-weight: 600;
+  color: var(--cobre);
+}
+.form .fila-opcion {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid var(--borde);
+  font-weight: 400;
+}
+.opciones {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem 1.25rem;
+  margin: 0.5rem 0;
+}
+.form .check {
+  flex-direction: row;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 400;
+}
+.form .fila-opcion label.tenue {
+  flex-direction: row;
+  align-items: center;
+  font-weight: 400;
+}
+.fila-capacidad {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 8rem auto auto;
+  gap: 0.5rem;
+  align-items: center;
+  margin-bottom: 0.5rem;
+}
+.sugerencias {
+  background: var(--cobre-claro);
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+  margin-bottom: 0.75rem;
+}
+.sugerencias ul {
+  margin: 0.25rem 0 0;
+  padding-left: 1.1rem;
+}
+.aviso-local {
+  background: var(--ok-claro);
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem;
+}
+.aviso-local--no {
+  background: var(--aviso-claro);
+}
+
 @media (max-width: 720px) {
+  .fila-capacidad {
+    grid-template-columns: 1fr 1fr;
+  }
   .reporte__metas {
     grid-template-columns: 1fr;
   }
