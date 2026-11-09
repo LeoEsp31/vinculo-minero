@@ -61,6 +61,8 @@ npm run dev                          # http://localhost:5173
 
 Con Docker: `docker compose up --build` → http://localhost:8080
 
+Deploy público (un solo servicio, web + API): ver [docs/deploy.md](docs/deploy.md).
+
 Atajos: `make ayuda`, `make test`, `make lint`.
 
 ## Estructura
