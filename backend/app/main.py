@@ -7,9 +7,11 @@ Documentación interactiva: http://localhost:8000/docs
 from __future__ import annotations
 
 import os
+from pathlib import Path
 
 from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
+from fastapi.staticfiles import StaticFiles
 
 from .api.rutas import router
 
@@ -33,3 +35,10 @@ app.add_middleware(
 )
 
 app.include_router(router)
+
+# Deploy en un solo servicio: si existe la web compilada (frontend/dist), la API también la
+# sirve. Así frontend y API comparten dominio y no hace falta configurar CORS ni VITE_API_URL.
+# Se monta al final para que /api y /docs tengan prioridad.
+web = Path(os.getenv("VM_WEB_DIR", Path(__file__).resolve().parents[1] / "web"))
+if web.is_dir():
+    app.mount("/", StaticFiles(directory=web, html=True), name="web")

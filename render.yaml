@@ -1,0 +1,11 @@
+# Blueprint de Render: crea un único servicio web con el Dockerfile de la raíz.
+# Ver docs/deploy.md.
+services:
+  - type: web
+    name: vinculo-minero
+    runtime: docker
+    plan: free
+    healthCheckPath: /api/salud
+    envVars:
+      - key: VM_SUGERIDOR
+        value: palabras_clave
