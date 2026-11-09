@@ -1,4 +1,4 @@
-from app.core.alianzas import perfil_combinado, sugerir_utes
+from app.core.alianzas import matriz_cobertura, perfil_combinado, sugerir_utes
 
 from .conftest import FECHA, hacer_item, hacer_lote, hacer_proveedor
 
@@ -44,3 +44,26 @@ def test_perfil_combinado_suma_capacidades_y_une_certificaciones():
     assert combo.capacidad("MET-FAB") == 25
     assert combo.certificaciones_vigentes(FECHA) == {"ISO-9001", "SEG-ALT"}
     assert combo.dotacion == 12 and combo.anios_experiencia_minera == 6
+
+
+def test_matriz_de_cobertura_muestra_que_aporta_cada_socio():
+    e = hacer_proveedor("E", {"ELE-MT": 3500}, {"ISO-45001": None}, experiencia=6)
+    i = hacer_proveedor("I", {"ELE-INS": 1000}, {"ISO-9001": None}, experiencia=4)
+    lote = lote_electrico()
+    matriz = matriz_cobertura([e, i], lote, FECHA)
+    por_req = {f.requisito: f for f in matriz}
+    mt = por_req["Montaje eléctrico de media y baja tensión"]
+    assert mt.cubierto and [c.aporta for c in mt.celdas] == [True, False]
+    assert all(f.cubierto for f in matriz)
+    # viene incluida en cada propuesta
+    (ute,) = sugerir_utes(lote, [e, i], FECHA)
+    assert ute.matriz == matriz
+
+
+def test_matriz_marca_requisito_no_cubierto_por_el_grupo():
+    a = hacer_proveedor("A", {"MET-MEC": 2000}, experiencia=6)
+    b = hacer_proveedor("B", {"MET-MEC": 2000}, experiencia=4)
+    lote = hacer_lote(hacer_item("I1", "MET-MEC", 3000, experiencia_minima_anios=8))
+    filas = {f.tipo: f for f in matriz_cobertura([a, b], lote, FECHA)}
+    assert filas["rubro"].cubierto  # 2000 + 2000 >= 3000
+    assert not filas["experiencia"].cubierto  # nadie llega a 8 años

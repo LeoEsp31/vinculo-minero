@@ -291,23 +291,47 @@ h3 {
   margin: 0 0 0.5rem;
   color: var(--ute);
 }
-.ute__socios {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-  gap: 0.75rem;
-}
-.socio {
-  background: #fff;
+
+/* Matriz de cobertura de la UTE (requisitos × socios) */
+.matriz {
+  overflow-x: auto; /* en celular la tabla se desplaza sola, no la página */
+  background: var(--superficie);
   border-radius: 8px;
-  padding: 0.6rem 0.8rem;
-  font-size: 0.9rem;
 }
-.socio ul {
-  margin: 0.35rem 0 0;
-  padding-left: 1.1rem;
+.matriz table {
+  min-width: 34rem; /* debajo de esto, scroll horizontal dentro de la matriz */
 }
-.socio li.unico {
+.matriz td:first-child {
+  min-width: 11rem;
+}
+.matriz th .chip {
+  margin-left: 0.35rem;
+}
+.celda--aporta {
+  background: var(--ok-claro);
+  color: var(--ok);
+}
+.celda--unica {
+  font-weight: 700; /* sin este socio, el requisito no se cubre */
+}
+.celda--vacia {
+  color: var(--tenue);
+}
+.celda--ok {
+  color: var(--ok);
   font-weight: 600;
+  white-space: nowrap;
+}
+.celda--mal {
+  background: var(--mal-claro);
+  color: var(--mal);
+  font-weight: 600;
+  white-space: nowrap;
+}
+.matriz__nota {
+  margin: 0;
+  padding: 0.4rem 0.5rem;
+  font-size: 0.8rem;
 }
 
 /* Tablas */

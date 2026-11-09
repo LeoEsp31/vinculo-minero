@@ -227,10 +227,30 @@ class AporteSocio(BaseModel):
     aporte_unico: list[str]  # lo que sin este socio faltaría
 
 
+TipoRequisito = Literal["rubro", "certificacion", "maquinaria", "experiencia", "dotacion"]
+
+
+class CeldaCobertura(BaseModel):
+    proveedor_id: str
+    aporta: bool
+    valor: str  # lo que pone este socio: "30000 m3/mes", "✓", "7 años", "—"
+
+
+class FilaCobertura(BaseModel):
+    """Una fila de la matriz requisitos × socios de una UTE."""
+
+    tipo: TipoRequisito
+    requisito: str
+    exigido: str  # "25000 m3/mes", "excluyente", "deseable", "3 años"
+    celdas: list[CeldaCobertura]
+    cubierto: bool  # el grupo, en conjunto, cumple este requisito
+
+
 class PropuestaUTE(BaseModel):
     socios: list[AporteSocio]
     evaluacion: EvaluacionProveedor  # evaluación del perfil combinado
     explicacion: str
+    matriz: list[FilaCobertura] = []
 
 
 TipoOpcion = Literal["directa_local", "ute_local", "directa_no_local", "sin_cobertura"]

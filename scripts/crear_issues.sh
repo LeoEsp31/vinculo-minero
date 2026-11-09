@@ -24,9 +24,6 @@ issue "Commitear package-lock.json y usar npm ci en CI" "infra,P1" \
 issue "Deploy público de backend y frontend" "infra,P1" \
 "Publicar la demo con una URL estable y ponerla en el README. Opción simple: un solo servicio con Docker (\`docker compose\`) o backend y frontend por separado (definir \`VITE_API_URL\`). Tener un plan B grabado."
 
-issue "Matriz de cobertura visual de la UTE" "frontend,P1" \
-"En la tarjeta de lote con UTE: tabla requisitos (filas) × socios (columnas) con ✓, que deje claro qué aporta cada PyME. Datos: \`utes[].socios[].aporta\` y \`lote.items\`."
-
 issue "Formulario de carga de pliego" "frontend,P1" \
 "Formulario para crear un pliego con ítems (paquete, rubro, cantidad, monto, certificaciones, maquinaria, experiencia, dotación). Selects alimentados por \`GET /api/taxonomia\`. Envía \`POST /api/pliegos\` y redirige al análisis."
 
