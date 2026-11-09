@@ -31,6 +31,11 @@ def _404(e: NoEncontrado) -> HTTPException:
     return HTTPException(status_code=404, detail=str(e))
 
 
+def _rotular(texto: str, rotulo: str) -> str:
+    """El prototipo solo maneja datos ficticios: toda alta queda rotulada como tal."""
+    return texto if rotulo in texto else f"{texto.strip()} {rotulo}"
+
+
 # --- Sistema y transparencia -------------------------------------------------------
 
 
@@ -87,6 +92,9 @@ def ver_proveedor(proveedor_id: str, svc: Svc) -> Proveedor:
 def crear_proveedor(proveedor: Proveedor, svc: Svc) -> Proveedor:
     if svc.repo.proveedor(proveedor.id):
         raise HTTPException(status_code=409, detail=f"Ya existe el proveedor {proveedor.id}")
+    proveedor = proveedor.model_copy(
+        update={"ficticio": True, "razon_social": _rotular(proveedor.razon_social, "[DEMO]")}
+    )
     return svc.guardar_proveedor(proveedor)
 
 
@@ -110,6 +118,9 @@ def ver_pliego(pliego_id: str, svc: Svc) -> Pliego:
 def crear_pliego(pliego: Pliego, svc: Svc) -> Pliego:
     if svc.repo.pliego(pliego.id):
         raise HTTPException(status_code=409, detail=f"Ya existe el pliego {pliego.id}")
+    pliego = pliego.model_copy(
+        update={"ficticio": True, "titulo": _rotular(pliego.titulo, "[FICTICIO]")}
+    )
     return svc.guardar_pliego(pliego)
 
 
