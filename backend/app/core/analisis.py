@@ -31,7 +31,7 @@ from .taxonomia import CERTIFICACIONES, RUBROS
 
 # Metas de referencia. Son parámetros: la reglamentación puede cambiarlas.
 META_PROVINCIAL_PCT = 60.0  # Ley de Desarrollo Local Minero (San Juan): objetivo de compras locales
-META_RIGI_PCT = 20.0  # Ley 27.742 (RIGI): plan de proveedores locales, mínimo del monto de inversión
+META_RIGI_PCT = 20.0  # Ley 27.742, art. 176 inc. l (RIGI): mínimo del monto de inversión
 
 ADVERTENCIAS_REPORTE = [
     "Estimación orientativa calculada sobre este pliego, no sobre el total de compras "
