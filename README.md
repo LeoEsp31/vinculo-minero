@@ -2,6 +2,9 @@
 
 **Vinculación explicable entre la demanda minera y las PyMEs proveedoras de San Juan.**
 
+**Demo en línea:** https://vinculo-minero.onrender.com · API: https://vinculo-minero.onrender.com/docs
+(plan gratuito: si estuvo un rato sin uso, la primera carga puede tardar).
+
 > Prototipo para el hackatón *Hackeando la Minería* (Ciclo Pilares San Juan, 2026) —
 > Desafío 3: *Mapeo y vinculación de proveedores locales*.
 > Todos los datos del repositorio son **ficticios**. La plataforma **no reemplaza** los
