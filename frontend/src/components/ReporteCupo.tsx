@@ -48,7 +48,7 @@ export function ReporteCupo({ r }: { r: Reporte }) {
             <strong>{pct(r.porcentaje_nacional)}</strong>
           </div>
           <Barra valor={r.porcentaje_nacional} meta={r.meta_rigi_pct} etiqueta="Nacional" />
-          <small>Mínimo de referencia RIGI: {pct(r.meta_rigi_pct)} (Ley 27.742)</small>
+          <small>Mínimo de referencia RIGI: {pct(r.meta_rigi_pct)} (Ley 27.742, art. 176)</small>
         </div>
       </div>
 
