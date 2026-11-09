@@ -11,6 +11,11 @@ export function Proveedores() {
   return (
     <section>
       <h1>Proveedores registrados</h1>
+      <div className="botonera">
+        <a className="boton" href="#/proveedores/nuevo">
+          + Registrar una PyME
+        </a>
+      </div>
 
       <div className="tarjeta">
         <h2>¿Qué rubros corresponden a mi empresa?</h2>

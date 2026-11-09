@@ -15,6 +15,11 @@ export function Pliegos() {
         Elegí un pliego para ver cómo se puede lotificar, qué PyMEs locales pueden cubrir cada lote
         y qué alianzas conviene armar.
       </p>
+      <div className="botonera">
+        <a className="boton" href="#/pliegos/nuevo">
+          + Cargar un pliego
+        </a>
+      </div>
       <div className="grilla">
         {datos?.map((p) => (
           <a key={p.id} className="tarjeta tarjeta--link" href={`#/pliegos/${p.id}`}>

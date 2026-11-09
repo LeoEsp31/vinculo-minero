@@ -17,7 +17,18 @@ async function pedir<T>(ruta: string, init?: RequestInit): Promise<T> {
   if (!r.ok) {
     let detalle = r.statusText;
     try {
-      detalle = (await r.json()).detail ?? detalle;
+      const d = (await r.json()).detail;
+      // FastAPI devuelve los errores de validación (422) como lista: los pasamos a texto.
+      if (Array.isArray(d)) {
+        detalle = d
+          .map((e: { loc?: unknown[]; msg?: string }) => {
+            const campo = (e.loc ?? []).filter((x) => x !== "body").join(" › ");
+            return campo ? `${campo}: ${e.msg}` : e.msg;
+          })
+          .join("; ");
+      } else if (d) {
+        detalle = String(d);
+      }
     } catch {
       /* respuesta sin JSON */
     }
@@ -30,6 +41,10 @@ async function pedir<T>(ruta: string, init?: RequestInit): Promise<T> {
 export const api = {
   pliegos: () => pedir<Pliego[]>("/pliegos"),
   pliego: (id: string) => pedir<Pliego>(`/pliegos/${id}`),
+  crearPliego: (p: Pliego) =>
+    pedir<Pliego>("/pliegos", { method: "POST", body: JSON.stringify(p) }),
+  crearProveedor: (p: Proveedor) =>
+    pedir<Proveedor>("/proveedores", { method: "POST", body: JSON.stringify(p) }),
   analisis: (id: string) => pedir<AnalisisPliego>(`/pliegos/${id}/analisis`),
   analisisConPesos: (id: string, pesos: Record<string, number>) =>
     pedir<AnalisisPliego>(`/pliegos/${id}/analisis`, {

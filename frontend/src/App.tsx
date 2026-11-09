@@ -1,5 +1,7 @@
 import { useEffect, useState } from "react";
 import { Analisis } from "./pages/Analisis";
+import { NuevoPliego } from "./pages/NuevoPliego";
+import { NuevoProveedor } from "./pages/NuevoProveedor";
 import { Pliegos } from "./pages/Pliegos";
 import { Proveedores } from "./pages/Proveedores";
 import { Transparencia } from "./pages/Transparencia";
@@ -16,6 +18,8 @@ function useRuta(): string {
 }
 
 function Pagina({ ruta }: { ruta: string }) {
+  if (ruta === "/pliegos/nuevo") return <NuevoPliego />;
+  if (ruta === "/proveedores/nuevo") return <NuevoProveedor />;
   const analisis = ruta.match(/^\/pliegos\/([^/]+)$/);
   if (analisis) return <Analisis pliegoId={decodeURIComponent(analisis[1])} />;
   if (ruta === "/proveedores") return <Proveedores />;
