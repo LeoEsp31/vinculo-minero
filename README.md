@@ -102,6 +102,9 @@ docs/              Arquitectura, decisiones (ADR), límites, fuentes, plan
 - [Decisiones de diseño (ADR)](docs/adr/)
 - [Plan de la semana y roles](docs/plan-semana.md)
 - [Guion de la demo y el pitch](docs/guion-demo.md)
+- [Supuestos, riesgos y próximos pasos](docs/riesgos-y-proximos-pasos.md)
+- [Declaración de IA y componentes de terceros](docs/declaracion-ia-y-terceros.md)
+- [Deploy](docs/deploy.md)
 - [Cómo contribuir](CONTRIBUTING.md)
 
 ## Equipo

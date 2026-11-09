@@ -43,6 +43,8 @@
 
 ## Técnicas
 
-- ⚠ Modelo de embeddings opcional: `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`
-  (Hugging Face). Verificar la licencia y la información sobre los datos de entrenamiento en
-  su ficha antes de citarlo en el informe (punto OSI).
+- Modelo de embeddings opcional: `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`
+  (Hugging Face), licencia Apache-2.0 según su ficha:
+  https://huggingface.co/sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2
+  Artículo: Reimers y Gurevych, *Sentence-BERT*, https://arxiv.org/abs/1908.10084
+  (la información sobre los datos de entrenamiento está en la ficha del modelo).
